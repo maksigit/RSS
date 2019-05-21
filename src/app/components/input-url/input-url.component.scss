@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .wrap-item {
+    border-right: 1px solid #000;
+    padding: 10px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .list-url {
+      .link {
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  }

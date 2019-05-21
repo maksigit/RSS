@@ -1,0 +1,23 @@
+.wrap-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+
+    .item-title {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}
+
+

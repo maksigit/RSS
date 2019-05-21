@@ -1,0 +1,11 @@
+<div class="wrap-item">
+  <p>CONTENT </p>
+  <a href="{{findLink(sub.children)}}" class="item" *ngFor="let sub of data">
+    <div *ngFor="let i of sub.children">
+      <span class="item-title">{{i.tagName === 'title' ? i.textContent : ''}}</span>
+      <span class="item-desc">{{i.tagName === 'description' ? i.textContent : ''}}</span>
+    </div>
+  </a>
+</div>
+
+

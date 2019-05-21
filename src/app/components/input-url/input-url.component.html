@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="wrap-item">
+        <p>LIST LINKS:</p>
+        <input id="input-link" type="text" placeholder="{{'Input Url'}}" (change)="listenInput($event)"/>
+        <button (click)="sendInputUrl()"> add URL</button>
+
+        <div class="list-url" *ngFor="let item of arrInputValue">
+            <a [routerLink]="" href="" class="link" (click)="getData(item)">{{item}} </a>
+        </div>
+    </div>
+
+    <app-content [data]="items"></app-content>
+    <app-chart [dataChart]="numbers"></app-chart>
+</div>
+
